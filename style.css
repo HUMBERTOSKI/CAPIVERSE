@@ -281,6 +281,12 @@ button:active{
 .top-image.left{left:18px;}
 .top-image.right{right:18px;}
 
+.bottom-image.center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 .top-image img{
   display:block;
   width:100%;
