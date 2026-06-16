@@ -296,6 +296,28 @@ button:active{
   50%{transform:translateY(-7px)}
 }
 
+.bottom-image{
+  position:fixed;
+  bottom:18px;
+  width:170px;
+  z-index:12;
+  pointer-events:none;
+  animation:glowFloat 6.5s ease-in-out infinite;
+}
+
+.bottom-image.left{left:18px;}
+.bottom-image.right{right:18px;}
+
+.bottom-image img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:22px;
+  box-shadow:0 32px 80px rgba(0,0,0,.45),0 0 35px rgba(0,255,225,.16);
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(0,0,0,.22);
+}
+
 @media (max-width:960px){
   body{padding:1.5rem;}
   main{grid-template-columns:1fr;}
