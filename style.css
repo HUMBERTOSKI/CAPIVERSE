@@ -102,6 +102,23 @@ button:active{transform:translateY(2px)}
 /* Accessibility: focus indicators */
 input:focus,button:focus{outline:2px solid rgba(0,255,225,0.12);outline-offset:3px}
 
-/* helper to insert capybara inner elements via HTML if desired */
-.capybara .eye, .capybara .nose{pointer-events:none}
+.top-image{
+  position:fixed;
+  top:22px;
+  width:150px;
+  z-index:22;
+  pointer-events:none;
+}
++.top-image.left{left:22px;}
++.top-image.right{right:22px;}
++.top-image img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,0.35),0 0 30px rgba(0,255,225,0.12);border:1px solid rgba(255,255,255,0.08);background:rgba(0,0,0,0.12);}
++
++@media (max-width:760px){
++  .top-image{width:110px;top:12px;}
++  .top-image.right{right:12px;}
++  .top-image.left{left:12px;}
++}
++
++/* helper to insert capybara inner elements via HTML if desired */
++.capybara .eye, .capybara .nose{pointer-events:none}
 
